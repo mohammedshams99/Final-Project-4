@@ -1,0 +1,923 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ddd;
+    overflow: hidden;
+}
+header .container {
+    width: 100%
+}
+
+header .container .auto {
+    width: 90%;
+    margin: auto;
+}
+
+header .container .auto nav .none {
+    opacity: 0;
+
+}
+
+header .container .auto nav .navbar-brand {
+    font-weight: 700;
+    font-size: 30px;
+    color: midnightblue;
+}
+
+header .container .auto nav .navbar-brand .fa-virus {
+    color: red;
+    opacity: .6;
+    animation-name: moving;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header .container .auto nav .collapse .navbar-nav .nav-item a {
+    color: midnightblue;
+    font-weight: bold;
+}
+
+header .container .auto nav .collapse .navbar-nav .nav-item a:hover {
+    color: blue;
+}
+
+header .container .auto nav .collapse .navbar-nav .nav-item .special {
+    color: blue;
+}
+
+header .container .auto nav .collapse .navbar-nav .nav-item .special:hover {
+    color: rgb(90, 90, 247);
+}
+
+header .container .auto nav .collapse .navbar-nav .nav-item .border {
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+}
+header .container .auto nav .collapse .dropdown .dropdown-toggle{
+    animation-name: hover1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes hover1 {
+    25% {
+        color:black;
+        background-color: white;
+    }
+
+    50% {
+        color:white;
+        background-color: black;
+    }
+
+    75% {
+        color:black;
+        background-color: white;
+    }
+
+    100% {
+        color:white;
+        background-color: black;
+    }
+}
+
+
+header .container #row {
+    margin-top: 140px
+}
+
+header .container #row .col-lg-6 .row .text-center span,
+h3,
+p {
+    font-weight: 500;
+    color: midnightblue;
+}
+
+header .container #row .col-lg-6 .row .text-center .text-danger {
+    padding-left: 20px;
+}
+
+header .container #row .col-lg-6 .row #mt {
+    margin-top: 15px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+}
+
+header .container #row .col-lg-6 .botn #a1 {
+    text-decoration: none;
+
+}
+
+header .container #row .col-lg-6 .botn #b1,
+#a1 {
+    margin: 35px 25px;
+    font-size: 25px;
+}
+
+header .container #row .col-lg-6 .smallp {
+    margin: 40px 0px;
+    opacity: .4;
+}
+
+/* =======================END OF THE HEADER========================= */
+.go {
+    position: fixed;
+    z-index: 5000;
+    right: 20px;
+    bottom: 10px;
+}
+
+.go .go-up {
+    animation-name: up;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.go .go-down {
+    animation-name: down;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.go .go-up,
+.go-down {
+    margin: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+@keyframes up {
+
+    20% {
+        color: black;
+    }
+
+    40% {
+        color: white;
+    }
+
+    60% {
+        color: black;
+    }
+
+    80% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes down {
+
+    20% {
+        color: white;
+    }
+
+    40% {
+        color: black;
+    }
+
+    60% {
+        color: white;
+    }
+
+    80% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+/* ========================GO BUTTONS================================ */
+
+#about {
+    margin: 50px 0px;
+}
+
+#about .container .row .col-lg-7 h5 {
+    color: blue;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+#about .container .row .col-lg-7 h4 {
+    color: rgba(6, 4, 100, 0.69);
+}
+
+#about .container .row .col-lg-7 h1 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#about .container .row .col-lg-7 h6,
+p {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#about .container .row .col-lg-4 ul {
+    list-style-type: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#about .container .row .col-lg-4 ul li {
+    width: 100%;
+    text-align: center;
+    height: 65px;
+}
+
+#about .container .row .col-lg-4 ul .lihead {
+    color: midnightblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* ===========================END OF SECTION ABOUT============================= */
+#spread {
+    margin: 70px 0px;
+}
+
+#spread .container .text-center h5 {
+    color: blue;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+#spread .container .text-center h1 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#spread .container .text-center p {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#spread .container .question {
+    margin: 80px;
+}
+
+#spread .container .question button {
+    border-radius: 30px;
+}
+
+#spread .container .row .col-lg-4 .card hr {
+    border: 3px solid darkcyan;
+    opacity: 0.5;
+    margin-bottom: 0px;
+}
+
+#spread .container .row .col-lg-4 .card .card-body .card-title {
+    color: blue;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+#spread .container .row .col-lg-4 .card .card-body .card-text {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+/* ===========================END OF SECTION SPREAD============================= */
+#symptoms {
+    margin: 70px 0px;
+}
+
+#symptoms .container .text-center h5 {
+    color: blue;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+#symptoms .container .text-center h1 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#symptoms .container .text-center p {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#symptoms .container .row {
+    margin-top: 60px;
+}
+
+#symptoms .container .row .col-lg-4 .card {
+    height: 120px;
+    border: 0px solid;
+    margin-bottom: 150px;
+
+}
+
+#symptoms .container .row .col-lg-4 .card img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+
+}
+
+#symptoms .container .row .col-lg-4 .card .card-body .card-title {
+    color: blue;
+    opacity: 0.7;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+#symptoms .container .row .col-lg-4 .card .card-body .card-text {
+    color: rgba(6, 4, 100, 0.74);
+    margin-bottom: 80px;
+}
+
+#symptoms .container .row .col-lg-4 .card .card-body .card-text span {
+    font-weight: bold;
+}
+
+/* =============================END OF SECTION SYMPTOMS======================== */
+
+#error {
+    margin: 150px 0px;
+}
+
+#error .container .text-center .row .col-lg-7 p .fa-exclamation-triangle {
+    font-size: 300%;
+
+}
+
+#error .container .text-center .row .col-lg-7 p {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#error .container .text-center .row .col-lg-7 p span {
+    font-weight: bolder;
+    color: blue;
+}
+
+#error .container .text-center .row .col-lg-5 {
+    padding-top: 40px;
+}
+
+#error .container .text-center .row .col-lg-5 a {
+    border-radius: 30px;
+}
+
+/* =============================END OF SECTION ERROR======================== */
+
+#protect {
+    margin: 50px 0px;
+}
+
+#protect .container .text-center h5 {
+    color: blue;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+#protect .container .text-center h1 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#protect .container .text-center p {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#protect .container .row .col-lg-3 .text-center .card {
+    margin-top: 50px;
+    border: 0px;
+}
+
+#protect .container .row .col-lg-3 .text-center .card img {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+#protect .container .row .col-lg-3 .text-center .card .card-body .card-title {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+
+#protect .container .botn1 {
+    margin: 40px 0px;
+}
+
+#protect .container .botn1 a {
+    text-decoration: none;
+}
+
+#protect .container .botn1 button {
+    border-radius: 30px;
+    font-size: 150%;
+}
+
+#protect .container .botn1 button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===========================END OF PROTECT PART ONE====================== */
+#protect .container .row {
+    margin: 120px 0px;
+}
+
+#protect .container .row .col-lg-7 h2 {
+    margin: 35px 0px;
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#protect .container .row .col-lg-7 ul {
+    list-style-type: none;
+}
+
+#protect .container .row .col-lg-7 ul li {
+    margin: 15px 0px;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#protect .container .row .col-lg-7 ul li span {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#protect .container .row .col-lg-7 ul li a {
+    text-decoration: underline;
+}
+
+/* ===========================END OF PROTECT SECTION========================= */
+#wash {
+    margin: 30px 0px;
+}
+
+#wash .container .text-center {
+    margin: 100px 0px;
+}
+
+#wash .container .text-center h2 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#wash .container .text-center .wash {
+    text-decoration: none;
+}
+
+#wash .container .text-center h2,
+wash {
+    margin: 25px 0px;
+}
+
+#wash .container .row .col-lg-2 img {
+    border-radius: 50%;
+    margin-bottom: -80px;
+}
+
+#wash .container .row .col-lg-2 h6 {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+/* ===========================END OF WASH SECTION========================= */
+
+#treatment {
+    background-color: rgba(26, 22, 245, 0.842);
+}
+
+#treatment .container .row {
+    margin: 50px 0px;
+    padding: 90px 0px;
+}
+
+#treatment .container .row .col-lg-7 h5 {
+    font-weight: bold;
+    color: mediumspringgreen;
+
+}
+
+#treatment .container .row .col-lg-7 h1 {
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+
+#treatment .container .row .col-lg-7 .text-light span {
+    font-size: 105%;
+    font-weight: bolder;
+
+}
+
+#treatment .container .row .col-lg-5 {
+    background-color: navy;
+    opacity: 0.6;
+    padding: 50px 30px;
+    border-radius: 20px;
+}
+
+#treatment .container .row .col-lg-5 h6 {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#treatment .container .row .col-lg-5 ul {
+    list-style-type: none;
+}
+
+#treatment .container .row .col-lg-5 ul li {
+    margin: 10px 0px;
+}
+
+/* ===========================END OF TREATMENT SECTION================================== */
+#do .container h5 {
+    margin: 100px 0px 10px 0px;
+    color: blue;
+    opacity: 0.7;
+}
+
+#do .container h1 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#do .container p {
+    color: rgba(6, 4, 100, 0.74);
+}
+
+#do .container .row {
+    margin-top: 80px;
+    margin-top: 50px;
+}
+
+#do .container .row .col-lg-3 .col-lg-12 {
+    display: flex;
+    margin: 20px 0px;
+}
+
+#do .container .row .col-lg-3 .col-lg-12 span {
+    margin-top: 50px;
+    color: blue;
+    opacity: 0.9;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 20px;
+    
+}
+#do .container .row .col-lg-3 .col-lg-12 .false{
+    margin-top: 15px;
+    margin-right: -74px; 
+    color: red;
+   
+}
+
+#do .container .row .col-lg-3 .col-lg-12 img{
+    border: 2px solid steelblue;
+    border-radius: 50%;
+    margin-left: 40px;
+    width:50%;
+    height:50%
+}
+#do .container .row .col-lg-6 .protectpic{
+    height: 100%;
+}
+#do .container .row .col-lg-3 .col-lg-12 .pic2{
+    margin-left: 0px;
+    margin-right: 30px;
+}
+#do .container .row .col-lg-3 .col-lg-12 .correct{
+    margin-left: -66px;
+    margin-top: 15px;
+}
+#do .container .row .col-lg-3 .col-lg-12 .span2{
+    padding-left: 25px;
+}
+/* ======================================END OF DO SECTION================================ */
+#common .container h5 {
+    margin: 100px 0px 10px 0px;
+    color: blue;
+    opacity: 0.7;
+}
+#common .container h1 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+#common .container .row{
+    margin:50px 0px; 
+}
+#common .container .row .col-lg-4 .nav-pills{
+    background-color: white;
+    margin-top: 8px;
+}
+#common .container .row .col-lg-4 .nav-pills .nav-link{
+    color: rgba(6, 4, 100, 0.74);
+    margin: 5px 0px;
+    border: 1px solid #ddd;
+    height:50px;
+    overflow: hidden;
+    padding:10px;
+    
+}
+#common .container .row .col-lg-4 .nav-pills .nav-link:hover{
+    color: #007bff;
+    border:1px solid #007bff;
+    background-color: white;
+    transition: all 0.25s;
+    
+}
+#common .container .row .col-lg-4 .nav-pills .nav-link  .fa-caret-right{
+    margin:0px 10px;
+}
+#common .container .row .col-lg-8{
+    margin-top:7px;
+}
+
+#common .container .row .col-lg-8 .tab-content .tab-pane .accordion .card .card-header .mb-0 .d-flex{
+    color: rgba(6, 4, 100, 0.74);
+    font-weight: bold;
+    text-decoration: none;  
+}
+#common .container .row .col-lg-8 .tab-content .tab-pane .accordion .card .card-header .mb-0 .d-flex:hover{
+    color: #007bff;
+}
+#common .container .row .col-lg-8 .tab-content .tab-pane .accordion .card .collapse .card-body{
+    color: rgba(6, 4, 100, 0.74);
+}
+#common .container .row .col-lg-8 .tab-content .tab-pane .accordion .card .collapse .card-body span{
+    color: #007bff;
+}
+#common .container .row .col-lg-8 .tab-content .tab-pane .accordion .card .collapse .card-body .span10{
+    color: rgba(6, 4, 100, 0.74);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* =====================================END OF COMMON SECTION================================ */
+#update .container{
+    background-color: whitesmoke;
+    
+}
+#update .container .text-center{
+    padding-top: 30px;
+}
+#update .container .text-center h5 {
+    margin: 100px 0px 10px 0px;
+    color: blue;
+    opacity: 0.7;
+}
+#update .container .text-center h1 {
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+}
+#update .container .row {
+    margin:50px 0px;
+    justify-content: space-around;
+    
+}
+#update .container .row .col-lg-4 .card{
+    margin:20px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+#update .container .row .col-lg-4 .card img{
+border-radius: 10px;
+}
+#update .container .row .col-lg-4 .card .card-body h6{
+    font-weight: 800;
+    color: rgba(6, 4, 100, 0.74);
+    font-size: 20px;
+}
+/* ===================================END OF UPDATE SECTION================================ */
+#footer{
+    background-color: rgb(2, 2, 32);
+    margin: 100px 0px 0px 0px;
+    padding: 80px 0px;
+}
+#footer .container .row{
+    color: white;
+}
+#footer .container .row .col-lg-4 a{
+    font-weight: 700;
+    font-size: 30px;
+    color: midnightblue;
+}
+#footer .container .row .col-lg-4 a .fa-virus{
+    color: red;
+    opacity: .6;
+    animation-name: moving;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+#footer .container .row .col-lg-4 p{
+    color: #007bff;
+}
+#footer .container .row .col-lg-4 .icon{
+    color: white;
+    margin:0px 5px;
+}
+#footer .container .row .col-lg-4 .icon:hover{
+    color: #007bff;
+}
+#footer .container .row .col-lg-2 .fooa{
+    margin-top:50px ;
+    text-decoration: none;
+}
+#footer .container .row .col-lg-3 a{
+    text-decoration: none;
+}
+#footer .container hr{
+    border:1px solid white;
+    margin: 80px 0px;
+}
+#footer .container p{
+    color: #007bff;
+}
+#footer .container p span{
+    font-weight: bold;
+    color: rgb(190, 9, 69);
+    text-shadow: 10px 15px 4px white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ===========================END OF FOOTER========================================= */
+
+@media( max-width : 770px){
+
+    header .container .auto nav .collapse .dropdown .dropdown-toggle{
+        width:100%;
+        border-radius: 20px;
+    }
+/* =====================================END NAVBAR================================== */
+header .container #row .col-lg-6 .row .text-center span{
+    font-size: 40px;
+}
+header .container #row .col-lg-6 .row .text-center h3{
+    font-size: 20px;
+}
+header .container #row .col-lg-6 .botn #b1{
+    font-size:20px;
+}
+header .container #row .col-lg-6 .botn #a1{
+    font-size:30px;
+   
+}
+header .container #row .col-lg-6 .row {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+header .container #row .col-lg-6 .row .col-lg-4{
+    margin-top: 5px;
+}
+header .container #row .col-lg-6 .smallp{
+    font-size: 12px;
+}
+/* ===================================END OF HEADER====================================== */
+
+#about .container .row .col-lg-7 h1{
+    font-size: 22px;
+}
+#about .container .row .col-lg-7 h4{
+    font-size: 20px;
+}
+#about .container .row .col-lg-4{
+    margin-right: 30px;
+}
+/* ===================================END OF ABOUT SECTION====================================== */
+#spread .container .text-center h5{
+font-size: 15px;
+}
+#spread .container .text-center h1{
+font-size: 22px;
+}
+#spread .container .row .col-lg-4{
+    margin-left:20px;
+    margin-top:15px;
+}
+#spread .container .question .btn h4{
+    font-size: 15px;
+}
+/* ===================================END OF SPREAD SECTION====================================== */
+#symptoms .container .text-center h5{
+    font-size: 15px;
+}
+#symptoms .container .text-center h1{
+    font-size: 22px;
+}
+#symptoms .container .row .col-lg-4{
+    margin-left:20px;
+    margin-top:35px;
+}
+/* ===================================END OF SYMPTOMS SECTION====================================== */
+#error .container .text-center .row .col-lg-5 .btn h4{
+    font-size: 15px;
+}
+/* ===================================END OF ERROR SECTION========================================= */
+#protect .container .text-center h5{
+    font-size: 15px;
+}
+#protect .container .text-center h1{
+    font-size: 22px;
+}
+#protect .container .botn1 .btn a{
+    font-size: 15px;
+}
+#protect .container .botn1 a{
+    font-size: 20px;
+}
+#protect .container .row .col-lg-7 h2{
+    font-size: 22px;
+}
+/* ===================================END OF PROTECT SECTION====================================== */
+#wash .container .text-center h2{
+    font-size: 22px;
+}
+#wash .container .text-center a h4{
+    font-size: 15px;
+}
+#wash .container .row .col-lg-2{
+    margin-left: 50px;
+}
+#wash .container .row .col-lg-2 h6{
+margin-right: 35px;
+}
+/* ===================================END OF WASH SECTION====================================== */
+#treatment .container .row .col-lg-7 h5{
+    font-size: 15px;
+}
+#treatment .container .row .col-lg-7 h1{
+    font-size: 18px;
+}
+/* ===================================END OF TREATMENT SECTION================================== */
+#do .container h1{
+    font-size: 22px;
+}
+#do .container .row .col-lg-3 .col-lg-12 .false{
+    margin-left: 10px;
+}
+#do .container .row .col-lg-3 .col-lg-12 .correct{
+    margin-left: -63px;
+}
+/* ===================================END OF DO SECTION========================================= */
+#common .container .text-center h5{
+    font-size: 17px;
+}
+#common .container .text-center h1{
+    font-size: 20px;
+}
+#common .container .row .col-lg-4 .nav-pills .nav-link{
+    font-size: 15px;
+}
+/* ===================================END OF COMMON SECTION====================================== */
+#update .container .text-center h1{
+    font-size: 28px;
+}
+#update .container .row .col-lg-4 .card .card-body .card-title{
+    font-size: 14px;
+}
+#update .container .row .col-lg-4 .card .card-body .card-text{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+}

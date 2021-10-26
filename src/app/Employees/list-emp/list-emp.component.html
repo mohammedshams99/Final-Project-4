@@ -1,0 +1,24 @@
+<h1 class="text-center text-info">List Employee Page</h1>
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-dark">
+          <tr class="head">
+              <th>Id</th>
+              <th>Employee Name</th>
+              <th> Position</th>
+              <th> Profile</th>
+              <th> Action</th>
+          </tr>
+          <tr *ngFor = "let employee of allData">
+              <th>{{employee.id}}</th>
+              <th>{{employee.name}}</th>
+              <th>{{employee.position}}</th>
+              <th><img width="70" [src]="employee.imgUrl" alt=""></th>
+              <th><a routerLink="/update/{{employee.id}}" class="btn btn-info"> Edit</a></th>
+              <th> <button (click)="remove(employee.id)" class="btn btn-danger"> Remove </button></th>
+          </tr>
+      </table>
+    </div>
+  </div>
+</div>

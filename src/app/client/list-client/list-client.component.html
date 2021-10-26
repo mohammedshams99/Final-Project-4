@@ -1,0 +1,23 @@
+<h1 class="text-center text-info">List Client Page</h1>
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-dark">
+          <tr class="head">
+              <th>Id</th>
+              <th>Client Name</th>
+              <th> Position</th>
+              <th> Action</th>
+          </tr>
+          <tr *ngFor = "let client of allData">
+              <th>{{client.id}}</th>
+              <th>{{client.name}}</th>
+              <th>{{client.position}}</th>
+              <th><a routerLink="/updateC/{{client.id}}" class="btn btn-info"> Edit</a></th>
+              <th> <button (click)="remove(client.id)" class="btn btn-danger"> Remove </button></th>
+          </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
